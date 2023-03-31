@@ -1,0 +1,17 @@
+app:
+  kafka:
+    bootstrap:
+      servers: localhost:9092
+
+    key:
+      serializer: org.apache.kafka.common.serialization.StringSerializer.class
+      deserializer: org.apache.kafka.common.serialization.StringDeserializer.class
+
+    value:
+      serializer: org.apache.kafka.common.serialization.StringSerializer.class
+      deserializer: org.apache.kafka.common.serialization.StringDeserializer.class
+
+    topic: test-topic
+
+    group:
+      id: test-group
